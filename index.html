@@ -17,18 +17,19 @@
           placeholder="Paste Your Text here"
         ></textarea>
       </div>
-      <div>
-        <button type="submit" onclick="wordcount()">Click To Count</button>
-      </div>
+      <div></div>
       <div id="result">0 words</div>
     </div>
     <script>
-      function wordcount() { 
-        let textpaste = document.getElementById("pastearea").value;
-        const textarea = textpaste.split(" ");
+      let textpaste = document.getElementById("pastearea");
+
+      function wordcount() {
+        let values = textpaste.value;
+        const textarea = values.split(" ");
         document.getElementById("result").innerHTML =
           textarea.length + " words";
       }
+      textpaste.addEventListener("keyup", wordcount);
     </script>
   </body>
 </html>
