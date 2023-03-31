@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>word counter</title>
+  </head>
+  <body>
+    <div id="wordcounter">
+      <h2>Word Counter</h2>
+      <div>
+        <textarea
+          name="pastearea"
+          id="pastearea"
+          placeholder="Paste Your Text here"
+        ></textarea>
+      </div>
+      <div>
+        <button type="submit" onclick="wordcount()">Click To Count</button>
+      </div>
+      <div id="result">0 words</div>
+    </div>
+    <script>
+      function wordcount() { 
+        let textpaste = document.getElementById("pastearea").value;
+        const textarea = textpaste.split(" ");
+        document.getElementById("result").innerHTML =
+          textarea.length + " words";
+      }
+    </script>
+  </body>
+</html>

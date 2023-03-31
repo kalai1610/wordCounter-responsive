@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    background-color:#DAF5FF;
+    
+}
+#wordcounter{
+    border: 5px solid #f0f03b ;
+    border-radius: 5px;
+    width: 500px;
+    height: auto;
+    background: #FEFF86;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+
+}
+#pastearea{
+    width: 350px;
+    height: 300px;
+    overflow: scroll;
+   resize: none;
+   border: 2px solid black;
+   border-radius: 5px;
+   background:#DAF5FF ;
+}
+#pastearea::-webkit-scrollbar-track-piece
+{
+    background-color: #175285;
+} 
+h2{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif ;
+    color: #0b487d;
+
+}
+#pastearea::placeholder{
+    padding: 20px;
+    font-size: larger;
+}
+button{
+    width:150px;  
+    padding:8px;
+    border-radius: 5px;
+    background-color:#B0DAFF ;
+    color:rgb(13, 1, 1);
+    font-weight: 300;
+}
+#result{
+    height:50px;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 25px;
+}
